@@ -74,11 +74,15 @@
 			$_SESSION['level'] = $member['level'];
 			session_write_close();
 			
-			//log user
-			$sql2 = "INSERT INTO log_login (login, timestamp) values ('$username', '$time')";
-			$result2 = mysql_query($sql2, $conn);
-
-			header("location: home.php");
+			if ($member['level'] == '1')   //registrar
+			{
+				header("location: registrar.php");
+			} elseif ($member['level'] == '2')    //parent
+			{
+				header("location: parent.php")
+			}elseif ($member['level'] == '3')     //front desk
+				header("location: entry.php")
+			}
 			exit();
 		}else {
 			//Login failed
