@@ -1,8 +1,8 @@
 
 <html>
 	<head>
-		<title>Clearance Tracker</title>
-		<LINK href="css/style.php" type=text/css rel=STYLESHEET>
+		<title>CLSD Online Student Registration</title>
+		<LINK href="css/login.css" type=text/css rel=STYLESHEET>
 	
    	<script>
 	function fcs() {
@@ -14,10 +14,8 @@
 
 </head>
 	
-	<body onload="fcs()">
-	<BR>
-	<BR>
-	<BR>
+<body onload="fcs()">
+	<BR><BR><BR>
 
 	<form name="loginform" action="login_exec.php" method="post">
 	<table width="309" border="0" align="center" cellpadding="2" cellspacing="5">
@@ -36,7 +34,7 @@
 			unset($_SESSION['ERRMSG_ARR']);
 			}
 		?>
-		<center><h1>Clearance Tracker</h1></center>
+		<center><h1>Cornwall-Lebanon School District Online Student Registration</h1></center>
 	    </td>
 	  </tr>
 	<tr>
