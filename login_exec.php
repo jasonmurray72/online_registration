@@ -90,7 +90,7 @@
 			if($errflag) {
 				$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
 				session_write_close();
-				header("location: index.php");
+				header("location: login.php");
 				exit();
 			}
 		}
