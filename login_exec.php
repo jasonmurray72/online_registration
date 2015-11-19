@@ -77,10 +77,9 @@
 			if ($member['level'] == '1')   //registrar
 			{
 				header("location: registrar.php");
-			} elseif ($member['level'] == '2')    //parent
-			{
+			} elseif ($member['level'] == '2') {   //parent
 				header("location: parent.php")
-			}elseif ($member['level'] == '3')     //front desk
+			}elseif ($member['level'] == '3')  {   //front desk
 				header("location: entry.php")
 			}
 			exit();
